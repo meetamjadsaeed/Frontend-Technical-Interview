@@ -1,0 +1,10 @@
+.displayBlock {
+    display: block;
+    width: 400px;
+    height: 300px;
+    background: green;
+}
+
+.displayNone {
+    display: none;
+}

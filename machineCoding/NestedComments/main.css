@@ -1,0 +1,8 @@
+/* Basic styling */
+.comment {
+    margin-left: 20px;
+}
+
+.nested-comments {
+    margin-left: 40px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker Example</title>
+</head>
+
+<body>
+    <button id="start">Start Heavy Computation</button>
+    <div id="result"></div>
+
+    <script src="worker.js"></script>
+    <script>
+        document.getElementById('start').addEventListener('click', () => {
+            const worker = new Worker('worker.js');
+
+            worker.onmessage = function (event) {
+                document.getElementById('result').textContent = 'Result: ' + event.data;
+            };
+
+            worker.postMessage(100000000); // Send data to the worker
+        });
+    </script>
+</body>
+
+</html>

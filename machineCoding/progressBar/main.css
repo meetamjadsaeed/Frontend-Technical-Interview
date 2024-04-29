@@ -1,0 +1,16 @@
+/* Style for the progress bar container */
+.progress-container {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+/* Style for the progress bar */
+.progress-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}

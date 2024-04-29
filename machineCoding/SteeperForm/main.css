@@ -1,0 +1,29 @@
+.stepper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.step {
+    display: none;
+}
+
+.step:first-child {
+    display: block;
+}
+
+.step-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.step-content {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+button:last-child {
+    margin-right: 0;
+}

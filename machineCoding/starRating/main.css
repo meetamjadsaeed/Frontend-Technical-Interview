@@ -1,0 +1,8 @@
+#star__wrapper>li {
+    list-style: none;
+    display: flex;
+}
+
+#star__wrapper {
+    display: flex;
+}
